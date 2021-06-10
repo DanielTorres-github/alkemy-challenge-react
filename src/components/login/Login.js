@@ -1,6 +1,6 @@
 const Login = () => {
     return (
-        <form className="container bg-dark">
+        <form className="container">
             <div class="form-group">
                 <label for="email">Email address:</label>
                 <input type="email" class="form-control" placeholder="Enter email" id="email" />
