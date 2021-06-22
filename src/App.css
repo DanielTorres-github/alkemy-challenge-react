@@ -1,5 +1,13 @@
 footer{
-    position: absolute;
+    position: fixed;
+    margin-top: 20px;
     bottom: 0;
     width: 100%;
+}
+.cardfoto{
+    width: 100%;
+}
+
+.home{
+    margin-bottom: 100px;
 }
