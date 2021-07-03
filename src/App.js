@@ -12,8 +12,8 @@ function App() {
     <HashRouter>
       <div className="App">
         <Nav></Nav>
-        <Route exact path={["/home", "/"]} component={Home}></Route>
-        <Route exact path="/login" component={Login}></Route>
+        <Route exact path={["/home"]} component={Home}></Route>
+        <Route exact path={["/login", "/"]} component={Login}></Route>
         <Route exact path="/profile" component={Profile}></Route>
         <Footer></Footer>
       </div>
