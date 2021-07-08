@@ -10,66 +10,76 @@ class Login extends Component {
             password: ""
         }
     }
-
+    /** Guarda el email que haya ingresado en el input de email*/
     saveEmail(event) {
         this.setState({
             email: event.target.value
         });
     }
-
+    /** Guarda el password que haya ingresado en el input de password*/
     savePass(event) {
         this.setState({
             password: event.target.value
         });
     }
-
+    /* login() conprueba que no estén vacios los input de email y password y ejecuta el chequeo de usuario*/
     login() {
         if (this.state.email && this.state.password) {
 
+            /*Funcion axios.post() hace chequeo de usuario en la base de datos con {this.state}. 
+            Si devuelve un token, es guardado en {this.setState.token} dentro del localStorage()*/
             axios.post("http://challenge-react.alkemy.org/", this.state)
                 .then((response) => {
+
                     localStorage.setItem("token", response.data.token)
 
                     this.setState({
                         token: response.data.token
                     });
-                    console.log(response)
                 })
                 .catch((error) => {
-                    console.log(error)
+                    alert("Mail o contraseña incorrecto")
+
                 })
         }
         else {
-            alert("gordo")
+            alert("Campos vacios")
         }
     }
 
 
     render() {
-        console.log(this.state.token);
-
+        //Si localStorage tiene un token guardado, redirige a Home
         if (localStorage.getItem("token")) {
             return (<Redirect to="/home" />)
         }
 
         return (
-            <div class="row container float-right">
-                <form className="row border-left col-12 col-lg-6 offset-lg-6">
-                    <h1 class="col-12">Logi</h1>
-                    <div class="row col-12">
-                        <div class=" form-group float-left col-lg-6 col-12">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" placeholder="Enter email" id="email" onChange={(event) => this.saveEmail(event)} />
-                        </div>
+            <div class="row">
+                <div class="col-9">
+                    <div>
+                        <h1 class="d-flex justify-content-center">Welcome</h1>
+                        <p class="d-flex justify-content-center">Make your dream team of superheroes</p>
                     </div>
-                    <div className="row col-12">
-                        <div class="form-group float-left col-12 col-lg-6">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" placeholder="Enter password" id="pwd" onChange={(event) => this.savePass(event)}></input>
+                </div>
+                <div class="col-3">
+                    <form className="row border-left col-12 col-lg-6">
+                        <h1 class="col-12">Log in</h1>
+                        <div class="row">
+                            <div class=" form-group float-left col-12">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="email" onChange={(event) => this.saveEmail(event)} />
+                            </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-dark rounded" onClick={() => this.login()}>Submit</button>
-                </form>
+                        <div className="row">
+                            <div class="form-group float-left col-12">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" placeholder="Enter password" id="pwd" onChange={(event) => this.savePass(event)}></input>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit btn btn-dark" onClick={() => this.login()}>Submit</button>
+                    </form>
+                </div>
             </div>
         );
     }
