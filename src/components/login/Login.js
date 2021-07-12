@@ -32,11 +32,12 @@ class Login extends Component {
                 .then((response) => {
 
                     localStorage.setItem("token", response.data.token)
-
+                    /**En esta variable de tipo JSON se guarda el token de usuario*/
                     this.setState({
                         token: response.data.token
                     });
                 })
+                /**.catch() funciona como un else en un if, si no guarda token de usuario, devuelve mensaje de error*/
                 .catch((error) => {
                     alert("Mail o contraseña incorrecto")
 

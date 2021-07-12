@@ -5,15 +5,17 @@ import superheroes from "../../mock/Superheroes.json"
 class Home extends Component {
   constructor(props) {
     super(props);
+    /**Esta variable JSON tiene linkeado el archivo JSON donde estan guardados los distintos superheroes*/
     this.state = {
       superheroes: superheroes
     }
+
     this.deleteHero=this.deleteHero.bind(this)
     this.showHero=this.showHero.bind(this)
   }
 
+  /** */
   showHero(heroe) {
-    console.log(this)
     return (<Card superheroe={heroe} deleteHero={this.deleteHero} />)
   }
 
