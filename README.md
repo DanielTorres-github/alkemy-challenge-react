@@ -1,7 +1,7 @@
 *************************************************************************
-*     Los datos válidos para obtener un token son:                      *
-*     ● Email: challenge@alkemy.org                                     *
-*     ● Password: react                                                 *
+    Los datos válidos para obtener un token son:                      
+    ● Email: challenge@alkemy.org                                     
+    ● Password: react                                                 
 *************************************************************************
 
 # Getting Started with Create React App
