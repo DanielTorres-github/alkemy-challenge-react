@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/alkemy-challenge-react/static/css/main.e64bb479.chunk.css",
-    "main.js": "/alkemy-challenge-react/static/js/main.599e0075.chunk.js",
-    "main.js.map": "/alkemy-challenge-react/static/js/main.599e0075.chunk.js.map",
-    "runtime-main.js": "/alkemy-challenge-react/static/js/runtime-main.bc9b8b3c.js",
-    "runtime-main.js.map": "/alkemy-challenge-react/static/js/runtime-main.bc9b8b3c.js.map",
-    "static/js/2.584b2c54.chunk.js": "/alkemy-challenge-react/static/js/2.584b2c54.chunk.js",
-    "static/js/2.584b2c54.chunk.js.map": "/alkemy-challenge-react/static/js/2.584b2c54.chunk.js.map",
-    "static/js/3.463876e6.chunk.js": "/alkemy-challenge-react/static/js/3.463876e6.chunk.js",
-    "static/js/3.463876e6.chunk.js.map": "/alkemy-challenge-react/static/js/3.463876e6.chunk.js.map",
-    "index.html": "/alkemy-challenge-react/index.html",
-    "static/css/main.e64bb479.chunk.css.map": "/alkemy-challenge-react/static/css/main.e64bb479.chunk.css.map",
-    "static/js/2.584b2c54.chunk.js.LICENSE.txt": "/alkemy-challenge-react/static/js/2.584b2c54.chunk.js.LICENSE.txt"
+    "main.css": "/DanielTorres-github/alkemy-challenge-react.git/static/css/main.e64bb479.chunk.css",
+    "main.js": "/DanielTorres-github/alkemy-challenge-react.git/static/js/main.599e0075.chunk.js",
+    "main.js.map": "/DanielTorres-github/alkemy-challenge-react.git/static/js/main.599e0075.chunk.js.map",
+    "runtime-main.js": "/DanielTorres-github/alkemy-challenge-react.git/static/js/runtime-main.0d7de6d8.js",
+    "runtime-main.js.map": "/DanielTorres-github/alkemy-challenge-react.git/static/js/runtime-main.0d7de6d8.js.map",
+    "static/js/2.584b2c54.chunk.js": "/DanielTorres-github/alkemy-challenge-react.git/static/js/2.584b2c54.chunk.js",
+    "static/js/2.584b2c54.chunk.js.map": "/DanielTorres-github/alkemy-challenge-react.git/static/js/2.584b2c54.chunk.js.map",
+    "static/js/3.463876e6.chunk.js": "/DanielTorres-github/alkemy-challenge-react.git/static/js/3.463876e6.chunk.js",
+    "static/js/3.463876e6.chunk.js.map": "/DanielTorres-github/alkemy-challenge-react.git/static/js/3.463876e6.chunk.js.map",
+    "index.html": "/DanielTorres-github/alkemy-challenge-react.git/index.html",
+    "static/css/main.e64bb479.chunk.css.map": "/DanielTorres-github/alkemy-challenge-react.git/static/css/main.e64bb479.chunk.css.map",
+    "static/js/2.584b2c54.chunk.js.LICENSE.txt": "/DanielTorres-github/alkemy-challenge-react.git/static/js/2.584b2c54.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc9b8b3c.js",
+    "static/js/runtime-main.0d7de6d8.js",
     "static/js/2.584b2c54.chunk.js",
     "static/css/main.e64bb479.chunk.css",
     "static/js/main.599e0075.chunk.js"
