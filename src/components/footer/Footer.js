@@ -1,7 +1,7 @@
 const Footer = () => {
     return ( 
         <footer className="bg-success">
-            <p>Daniel k-po</p>
+            <p>Daniel Torres</p>
         </footer>
      );
 }
